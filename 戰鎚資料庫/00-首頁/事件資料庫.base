@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.inFolder("02-事件")
+views:
+  - type: table
+    name: 全部事件（依時間）
+    order:
+      - file.name
+      - 系列
+      - 年代
+      - 短片潛力
+      - 可信度
+      - 狀態
+    sort:
+      - property: 系列
+        direction: ASC
+      - property: 排序年
+        direction: ASC
+  - type: table
+    name: 待查核
+    filters:
+      and:
+        - 狀態 == "待核"
+    order:
+      - file.name
+      - 年代
+      - 系列

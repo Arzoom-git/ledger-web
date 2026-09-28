@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "戰鎚40K 剪報",
+  "behavior": "create",
+  "noteNameFormat": "{{title}}",
+  "path": "90-收件匣",
+  "noteContentFormat": "> [!info] 剪報來源\n> {{url}}（剪下日期 {{date}}）\n\n## 我的重點\n- \n\n## 原文\n{{content}}",
+  "properties": [
+    {
+      "name": "類型",
+      "value": "剪報",
+      "type": "text"
+    },
+    {
+      "name": "系列",
+      "value": "戰鎚40K",
+      "type": "text"
+    },
+    {
+      "name": "標題原文",
+      "value": "{{title}}",
+      "type": "text"
+    },
+    {
+      "name": "來源",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "網站",
+      "value": "{{domain}}",
+      "type": "text"
+    },
+    {
+      "name": "剪下日期",
+      "value": "{{date}}",
+      "type": "date"
+    },
+    {
+      "name": "已整理",
+      "value": "false",
+      "type": "checkbox"
+    },
+    {
+      "name": "tags",
+      "value": "剪報",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [
+    "https://wh40k.lexicanum.com/",
+    "https://warhammer40k.fandom.com/"
+  ]
+}

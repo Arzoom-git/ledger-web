@@ -1,0 +1,9 @@
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "90-收件匣",
+  "attachmentFolderPath": "98-來源/附件",
+  "alwaysUpdateLinks": true,
+  "showFrontmatter": true,
+  "propertiesInDocument": "visible",
+  "useMarkdownLinks": false
+}
